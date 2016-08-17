@@ -1,0 +1,77 @@
+$button-type-simple-color: #EEE;
+$button-type-action-color: #6abfeb;
+$button-type-success-color: #49bc37;
+$button-type-alert-color: #f93a3a;
+
+@mixin button-common($bgcolor, $textcolor) {
+  @include button-size-small;
+  color: $textcolor;
+  font-family: inherit;
+  border-radius: 2px;
+  border: 1px solid darken($bgcolor, 10%);
+  box-shadow: 0 1px 1px rgba(darken($bgcolor, 5%), 0.5);
+  background: $bgcolor;
+  cursor: pointer;
+  &:hover {
+    background: darken($bgcolor, 2%);
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(darken($bgcolor, 5%), 0.8);
+  }
+}
+
+@mixin button-type-simple() {
+  @include button-common($button-type-simple-color, #666);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+}
+
+@mixin button-type-action() {
+  @include button-common($button-type-action-color, #fff);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+}
+
+@mixin button-type-success() {
+  @include button-common($button-type-success-color, #fff);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+}
+
+@mixin button-type-success() {
+  @include button-common($button-type-alert-color, #fff);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+}
+
+@mixin button-size-small() {
+  font-size: 0.8rem;
+  line-height: 2.0rem;
+  padding: 0 10px;
+}
+
+@mixin button-size-medium() {
+  font-size: 1.0rem;
+  line-height: 2.4rem;
+  padding: 0 15px;
+}
+
+@mixin button-size-large() {
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+  padding: 0 20px;
+}
+
+button {
+  //# Types
+  &.simple { @include button-type-simple; }
+  &.action { @include button-type-action; }
+  &.success { @include button-type-success; }
+  &.alert { @include button-type-alert; }
+  //# Sizes
+  &.small { @include button-size-small; }
+  &.medium { @include button-size-medium; }
+  &.large { @include button-size-large; }
+  &.full {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
+}

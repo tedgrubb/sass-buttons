@@ -1,0 +1,99 @@
+button {
+  cursor: pointer;
+}
+button.simple {
+  font-size: 0.8rem;
+  line-height: 2.0rem;
+  padding: 0 10px;
+  color: #666;
+  font-family: inherit;
+  border-radius: 2px;
+  border: 1px solid #d5d5d5;
+  box-shadow: 0 1px 1px rgba(225, 225, 225, 0.5);
+  background: #EEE;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+button.simple:hover {
+  background: #e9e9e9;
+}
+button.simple:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(225, 225, 225, 0.8);
+}
+button.action {
+  font-size: 0.8rem;
+  line-height: 2.0rem;
+  padding: 0 10px;
+  color: #fff;
+  font-family: inherit;
+  border-radius: 2px;
+  border: 1px solid #3dace5;
+  box-shadow: 0 1px 1px rgba(84, 181, 232, 0.5);
+  background: #6abfeb;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+button.action:hover {
+  background: #61bbea;
+}
+button.action:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(84, 181, 232, 0.8);
+}
+button.success {
+  font-size: 0.8rem;
+  line-height: 2.0rem;
+  padding: 0 10px;
+  color: #fff;
+  font-family: inherit;
+  border-radius: 2px;
+  border: 1px solid #3a952b;
+  box-shadow: 0 1px 1px rgba(65, 168, 49, 0.5);
+  background: #49bc37;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+button.success:hover {
+  background: #46b435;
+}
+button.success:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(65, 168, 49, 0.8);
+}
+button.alert {
+  font-size: 0.8rem;
+  line-height: 2.0rem;
+  padding: 0 10px;
+  color: #fff;
+  font-family: inherit;
+  border-radius: 2px;
+  border: 1px solid #f70909;
+  box-shadow: 0 1px 1px rgba(248, 33, 33, 0.5);
+  background: #f93a3a;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+button.alert:hover {
+  background: #f93030;
+}
+button.alert:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(248, 33, 33, 0.8);
+}
+button.small {
+  font-size: 0.8rem;
+  line-height: 2.0rem;
+  padding: 0 10px;
+}
+button.medium {
+  font-size: 1.0rem;
+  line-height: 2.4rem;
+  padding: 0 15px;
+}
+button.large {
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+  padding: 0 20px;
+}
+button.full {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
